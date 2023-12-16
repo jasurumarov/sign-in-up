@@ -1,0 +1,744 @@
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1366px;
+    padding: 0 98px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    list-style-type: none;
+}
+
+.link-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 51px;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-list-item .link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.nav-list-item .btn {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 2px 9.5px;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+.register-container {
+    max-width: 416px;
+    margin: 0 auto;
+}
+
+.register-section {
+    background: #f4f8fa;
+    padding-top: 65px;
+}
+
+
+.register-content {
+    background-color: #fff;
+    max-width: 496px;
+    margin: 24px auto;
+    margin-bottom: 64px;
+    box-shadow: 0px 4px 56px 0px rgba(0, 0, 0, 0.04),
+        0px 12px 16px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+/* Title Part */
+
+.title-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-part .site-logo {
+    margin-top: 40px;
+}
+
+.title-part .hero-text {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Segoe UI;
+    font-size: 29px;
+    font-weight: 900;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.title-part .already-part {
+    display: flex;
+    gap: 14px;
+}
+
+.already-part p {
+    color: #444150;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.already-part a {
+    color: var(--01-bab-3, #01bab3);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+/* End Title Part */
+
+/* Forms */
+
+.form-part {
+    margin-top: 56px;
+    padding-bottom: 40px;
+}
+
+
+input {
+    display: block;
+    outline: none;
+}
+
+.name-part {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;   
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: #444150;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.names {
+    display: block;
+    outline: none;
+    width: 200px;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+.names:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+.names::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.birth-date-part {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.birthDate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#birthDate {
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 12px;
+    font-size: 16px;
+}
+
+.gender-part {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap; 
+    margin-top: 8px;
+}
+
+.gender {
+    display: flex;
+    border-radius: 4px;
+    border: 2px solid var(--01-bab-3, #01BAB3);
+}
+
+.genders {
+    width: 20px;
+    height: 20px;
+    margin: 14px 0 14px 16px;
+}
+
+.gender-labels {
+    margin-top: 11px;
+    padding-left: 16px;
+    padding-right: 103.8px;
+}
+
+.skype-part {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.skype {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#skype {
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 12px;
+    font-size: 16px;
+}
+#skype:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#skype::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.promo-part {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#promo {
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 12px;
+    font-size: 16px;
+}
+#promo:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#promo::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.submitBtn {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    background: var(--01-bab-3, #01BAB3);
+    border: 0;
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 87px;
+}
+
+.linkBtn{
+    text-decoration: 0;
+}
+
+/* End Forms */
+
+.info {
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    line-height: 22px; 
+    padding-bottom: 75px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* END MAIN */
+
+/* SECOND STEP PAGE */
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#email {
+    display: block;
+    outline: none;
+    width: 414.5px;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#email:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#email::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.phone {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#tel {
+    display: block;
+    outline: none;
+    width: 414.5px;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#tel:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#tel::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.country-part {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#country {
+    display: block;
+    outline: none;
+    width: 200px;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#country:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#country::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#city {
+    display: block;
+    outline: none;
+    width: 200px;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#city:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#city::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.password-part {
+    margin-top: 22px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#password {
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#password:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#password::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.infopass{
+    cursor: pointer;
+}
+
+.conPassword-part {
+    margin-top: 22px;
+    margin-bottom: 87px;
+}
+
+.conPassword {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#conPassword {
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    color: #444150;
+    border-radius: 6px;
+    border: 1px solid #FB3838;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+#conPassword:focus {
+    background: #fbfbfb;
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 24px;
+}
+#conPassword::placeholder {
+    font-family: serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .link-group {
+        gap: 25px;
+    }
+
+    .btn-group {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    
+    
+    .link-group {
+        gap: 20px;
+    }
+
+    .btn-group {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .link-group {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    .site-logo img {
+        display: none;
+    }
+
+    .register-content {
+        background-color: #fff;
+        max-width: 400px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .name-part {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #firstName {
+        width: 380px;
+    }
+
+    #lastName {
+        width: 380px;
+    }
+
+    .birth-date-part {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .gender-part {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #labelgen {
+        margin-left: 10px;
+    }
+    
+    .gender-labels {
+        padding-right: 275px;
+    }
+    .gender-labels1 {
+        padding-right: 290px;
+    }
+
+    .skype-part {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .promo-part {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .info {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+
+    #email {
+        width: 380px;
+    }
+
+    .tel {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #tel {
+        width: 380px;
+    }
+
+    .country {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #country {
+        width: 380px;
+    }
+
+    .city {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #city {
+        width: 380px;
+    }
+    
+    .conPassword {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #conPassword {
+        width: 380px;
+    }
+
+    #password {
+        width: 100%;
+    }
+
+    .password-part {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .submitbutong {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
+        <meta name="author" content="Jasurbek Umarov" />
+        <meta name="description" content="SIGN IN-UP" />
+        <meta name="keywords" content="SIGN IN-UP, Register, Login" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="./images/header-images/site-icon.png" />
+        <title>SIGN IN-UP</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="./images/header-images/site-logo.svg" alt="Header Site Logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav-list">
+                            <div class="link-group">
+                                <li class="nav-list-item">
+                                    <a href="#" class="link">Services</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="link">About</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="link">Contacts</a>
+                                </li>
+                            </div>
+                            <div class="btn-group">
+                                <li class="nav-list-item">
+                                    <a href="./pages/logIn.html" class="btn">Log in</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="./index.html" class="btn">Open an account</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="btn">EN</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="register-section">
+                <div class="register-content">
+                    <div class="register-container">
+                        <div class="title-part">
+                            <div class="site-logo">
+                                <img src="./images/main-images/site-logo.svg" alt="Site Logo">
+                            </div>
+                            <h1 class="hero-text">Welcome to ByTrend!</h1>
+                            <div class="already-part">
+                                <p>Already have an account?</p>
+                                <a href="./pages/logIn.html">Log in</a>
+                            </div>
+                        </div>
+                        <form class="form-part">
+                            <div class="name-part">
+                                <div class="name">
+                                    <label for="firstName">First name</label>
+                                    <input 
+                                    type="text"
+                                    name="firstName"
+                                    id="firstName"
+                                    class="names"
+                                    placeholder="Your Name"
+                                    oninvalid="this.setCustomValidity('Error !')"
+                                    required
+                                    />
+                                </div>
+                                <div class="name">
+                                    <label for="lastName">Last name</label>
+                                    <input 
+                                    type="text"
+                                    name="lastName"
+                                    id="lastName"
+                                    class="names"
+                                    placeholder="Your Surname"
+                                    required
+                                    />
+                                </div>
+                            </div>
+                            <div class="birth-date-part">
+                                <div class="birthDate">
+                                    <label for="birthDate">Birth Date</label>
+                                    <input 
+                                    type="date"
+                                    name="birthDate"
+                                    id="birthDate"
+                                    required
+                                    />
+                                </div>
+                            </div>
+                            <label id="labelgen" for="gender">Gender</label>
+                            <div class="gender-part">
+                                <div class="gender">
+                                    <input 
+                                    type="radio"
+                                    name="gender"
+                                    id="male"
+                                    class="genders"
+                                    required
+                                    />
+                                    <label class="gender-labels gender-labels1" for="male">Male</label>
+                                </div>
+                                <div class="gender">
+                                    <input 
+                                    type="radio"
+                                    name="gender"
+                                    id="female"
+                                    class="genders"
+                                    required
+                                    />
+                                    <label class="gender-labels" for="female">Female</label>
+                                </div>
+                            </div>
+                            <div class="skype-part">
+                                <div class="skype">
+                                    <label for="skype">Skype</label>
+                                    <input 
+                                    type="text"
+                                    name="skype"
+                                    placeholder="Your login Skype"
+                                    id="skype"
+                                    />
+                                </div>
+                            </div>
+                            <div class="promo-part">
+                                <div class="promo">
+                                    <label for="promo">Promo</label>
+                                    <input 
+                                    type="text"
+                                    name="promo"
+                                    placeholder="Your promo"
+                                    id="promo"
+                                    />
+                                </div>
+                            </div>
+                            <div class="submitbutong">
+                                <a class="linkBtn" href="./pages/register2.html" target="_blank">
+                                    <button class="submitBtn">Continue <img src="./images/main-images/arrowright.svg" alt="Arrow Right"></button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <p class="info">©2020 All Rights Reserved. Lorem Technologies, Inc.</p>
+            </section>
+        </main>
+    </body>
+</html>
