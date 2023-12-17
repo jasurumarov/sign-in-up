@@ -78,13 +78,16 @@ header {
 
 /* MAIN */
 
+main {
+    background-color: #f4f8fa;
+}
+
 .register-container {
     max-width: 416px;
     margin: 0 auto;
 }
 
 .register-section {
-    background: #f4f8fa;
     padding-top: 65px;
 }
 
